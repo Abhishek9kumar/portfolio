@@ -14,7 +14,7 @@ body {
 .header {
     background-color: #DDD0C8;
     height: 70px;
-    width: 100%;
+    width: 100vw;
     padding: 1px;
     display: flex;
     align-items: center;
@@ -96,7 +96,7 @@ body {
 }
 
 .name {
-    width: 80%;
+    width: 60%;
     margin-top: 6rem;
 }
 
@@ -116,10 +116,10 @@ body {
 }
 
 .profile {
+    width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
 }
 
 .profile img {
@@ -394,13 +394,69 @@ footer {
 }
 
 /****************************************Response******************************************************/
-@media (max-width: 767px) {
-
-    #home,
+@media (max-width: 450px) {
+    .header,#home,
     #skill,
     #education,
     #contact {
+        width: 151vw;
+    }
+
+    footer {
         width: 140vw;
+    }
+
+    .nav_menu {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+
+    .logo img {
+        height: 40px;
+        width: 80px;
+    }
+
+    .p1 {
+        font-size: 28px;
+    }
+
+    .p2 {
+        font-size: 25px;
+    }
+
+    .profile img {
+        height: 12rem;
+        width: 10rem;
+        margin-left: 0;
+    }
+
+    .info {
+        height: 425px;
+        display: flex;
+        margin: 0rem 0rem 0rem 2rem;
+    }
+
+    .contact_container {
+        height: 2rem;
+        width: 2rem;
+        margin: 0px 5rem;
+    }
+
+    .contact_link {
+        width: 100vw;
+    }
+
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+
+    .header,#home,
+    #skill,
+    #education,
+    #contact {
+        width: 141vw;
     }
 
     footer {
@@ -410,7 +466,6 @@ footer {
     .logo img {
         height: 50px;
         width: 100px;
-        mix-blend-mode: darken;
     }
 
     .nav_menu {
@@ -426,8 +481,9 @@ footer {
     }
 
     .profile img {
-        height: 20rem;
-        width: 15rem;
+        height: 15rem;
+        width: 12rem;
+        margin-left: 0;
     }
 
     .p1 {
@@ -456,7 +512,7 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-    #home,
+    .header,#home,
     #skill,
     #education,
     #contact {
